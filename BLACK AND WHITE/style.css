@@ -1,0 +1,385 @@
+body{
+  background-color: #f3f3f3;
+  width: 100%;
+  min-width: 1170px;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url(fonts/opensans.ttf);
+}
+@font-face {
+  font-family: 'Open Sans Semibold';
+  src: url(fonts/opensanssemibold.ttf);
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.wrapper{
+  overflow: hidden;
+  width: 100%;
+  min-width: 1170px;
+  margin: 0 auto;
+}
+.slider_nav{
+  width: 100%;
+  background: url(img/banner.png);
+  height: 740px;
+}
+.slider_nav .logo{
+  position: absolute;
+  float: left;
+  margin-left: 215px;
+  margin-top: 42px;
+}
+.slider_nav .logo a{
+  font-family: 'Open Sans Semibold', Arial;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+nav ul{
+  float: right;
+  margin-right: 215px;
+  margin-top: 42px;
+}
+nav ul li{
+  position:relative;
+  display:inline-block;
+  margin-bottom: 17px;
+  float: left;
+  list-style-type: none;
+}
+nav ul li a{
+  display: inline-block;
+  color: #fff;
+  font-family: 'Open Sans', Arial;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 55px;
+}
+nav ul li a::after{
+  content: '';
+  display: block;
+  margin-top: 17px;
+  width: 0;
+  height: 2px;
+  background: #b7c8d9;
+  transition: width .3s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+}
+.menu img{
+  margin-top: 5px;
+}
+.heading1 figure{
+  margin: 0;
+}
+.heading1 figure img{
+  padding: 169px 0 32px 558px;
+}
+figcaption{
+  position: relative;
+  text-align: center;
+  font-family: 'Open Sans';
+  color: white;
+  font-size: 14px;
+}
+.link1 .btn1{
+  width: 228px;
+  height: 56px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: inline-block;
+}
+.btn1{
+  text-align: center;
+  background-color: rgba(20, 20, 20, .2);
+  border: 2px solid white;
+  transition: background-color .2s ease-in-out;
+}
+.btn1 p{
+  padding-top: 3px;
+  font-family: 'Open Sans';
+  color: white;
+  font-size: 14px;
+}
+a {
+    text-decoration: none;
+}
+.button{
+  text-align: center;
+  margin-top: 176px;
+}
+.btn1:hover{
+  background-color: rgba(20, 20, 20, .7);
+}
+
+.rowone{
+  width: 100%;
+  height: 355px;
+  background: #fff;
+}
+.rowone p{
+  font-family: 'Open Sans';
+}
+.text1{
+  float: left;
+  font-size: 24px;
+  margin-top: 138px;
+  margin-left: 210px;
+  margin-right: 130px;
+  margin-bottom: 0;
+  line-height: 41px;
+}
+.text2{
+  margin: 0;
+  padding-top: 148px;
+  font-size: 14px;
+  padding-right: 211px;
+}
+
+.rowtwo{
+  width: 100%;
+  height: 1360px;
+}
+.text3{
+  width: 100%;
+  text-align: center;
+  margin: 147px 0 0 0;
+  font-family: 'Open Sans';
+  font-size: 24px;
+}
+.main_photo{
+  margin-top: 88px;
+  padding-left: 212px;
+  display: flex;
+  flex-direction: row;
+  padding-right: 212px;
+}
+.photo1{
+  cursor: pointer;
+  width: 770px;
+  height: 300px;
+  background: url(img/row1.png);
+  margin: 0 30px 30px 0;
+  align-self: flex-start;
+  order: -1;
+  border: 1px solid white;
+}
+
+.photo2{
+  cursor: pointer;
+  width: 370px;
+  height: 300px;
+  background: url(img/row2.png);
+  margin: 0 0 30px 0;
+  align-self: flex-start;
+  order: 1;
+  border: 1px solid white;
+}
+.main_photo1{
+  padding-left: 212px;
+  display: flex;
+  flex-direction: row;
+  padding-right: 212px;
+  margin-bottom: 90px;
+}
+.photo3{
+  cursor: pointer;
+  width: 370px;
+  height: 300px;
+  background: url(img/row3.png);
+  margin: 0 30px 0 0;
+  border: 1px solid white;
+}
+.photo4{
+  cursor: pointer;
+  width: 770px;
+  height: 300px;
+  background: url(img/row4.png);
+  margin: 0;
+  border: 1px solid white;
+}
+.main_photo p{
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: #909f89;
+  margin-top: 258px;
+  margin-left: 42px;
+}
+.main_photo1 p{
+  font-family: 'Open Sans';
+  font-size: 14px;
+  color: #909f89;
+  margin-top: 258px;
+  margin-left: 42px;
+}
+.subscribe{
+  height: 200px;
+  width: 1170px;
+  margin: 0 auto;
+  background: #fff;
+}
+.subscribe p{
+  padding-top: 82px;
+  padding-left: 100px;
+  font-family: 'Open Sans';
+  font-size: 24px;
+}
+.button_subscribe{
+  margin: -6px;
+  background: #343638;
+  color: #fff;
+  font-family: 'Open Sans';
+  width: 170px;
+  height: 59px;
+  border: 0;
+  font-size: 14px;
+}
+.e-mail{
+  margin: 0;
+  width: 430px;
+  height: 57px;
+  background: #f3f3f3;
+  border: 1px solid #343638;
+}
+.subscribe form{
+  float: right;
+  margin: -65px 100px 0px 0px;
+  overflow: hidden;
+  width: 600px;
+  height: 59px;
+}
+.subscribe input::placeholder{
+  font-family: 'Open Sans';
+}
+.subscribe input{
+  padding: 0 30px;
+}
+.footer{
+  width: 100%;
+  height: 577px;
+  background: #fff;
+}
+.main_in_footer h3{
+  font-size: 18px;
+}
+.main_in_footer p{
+  color: #b8b8b8;
+}
+.main_in_footer q{
+  color: #b8b8b8;
+  font-style: italic;
+}
+.latest_tweet p{
+  color: #dddddd;
+}
+.main_in_footer{
+  padding-top: 140px;
+  margin-left: 212px;
+  margin-right: 212px;
+  margin-bottom: 130px;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Open Sans';
+}
+.bl_wh{
+  width: 318px;
+  height: 185px;
+  text-align: left;
+  margin-right: 55px;
+}
+.contact{
+  width: 191px;
+  height: 152px;
+  margin-right: 130px;
+}
+.latest_tweet{
+  width: 232px;
+  height: 150px;
+  margin-right: 96px;
+}
+.newsletter{
+  width: 283px;
+  height: 165px;
+}
+
+.button_subscribe2{
+  height: 100%;
+  width: 100px;
+  float: right;
+  background: #343638;
+  color: #fff;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  border: 0;
+}
+.e-mail2{
+  height: 100%;
+  width: 170px;
+  background: #f3f3f3;
+  border: 1px solid #343638;
+}
+.newsletter form{
+  width: 270px;
+  height: 50px;
+}
+.newsletter input::placeholder{
+  font-family: 'Open Sans';
+}
+.newsletter input{
+  padding: 0 20px;
+  font-style: italic;
+}
+.stroke{
+  padding-left: 212px;
+  padding-right: 212px;
+}
+.copy{
+  position: absolute;
+  float: left;
+  margin-left: 215px;
+  margin-top: 42px;
+}
+.copy{
+  font-family: 'Open Sans', Arial;
+  font-size: 14px;
+  color: #ededed;
+}
+.navi ul{
+  float: right;
+  margin-right: 215px;
+  margin-top: 42px;
+}
+.navi ul li{
+  position:relative;
+  display:inline-block;
+  margin-bottom: 17px;
+  float: left;
+  list-style-type: none;
+}
+.navi ul li a{
+  display: inline-block;
+  color: #000;
+  font-family: 'Open Sans', Arial;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 55px;
+}
+.navi ul li a::after{
+  content: '';
+  display: block;
+  margin-top: 17px;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+.navi ul li a:hover::after{
+  width: 100%;
+}

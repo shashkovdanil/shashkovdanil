@@ -1,0 +1,369 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'LMRomans';
+  src: url(../fonts/lmromanslant10-regular.ttf);
+}
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: 'Raleway-Thin';
+  src: url(../fonts/Raleway-Thin.ttf);
+}
+body {
+  margin: 0;
+}
+
+h2 {
+  font-weight: normal;
+  font-family: "Raleway-Thin";
+  font-size: 50px;
+}
+h2 strong {
+  font-weight: bold;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.wrapper {
+  width: 100%;
+  min-width: 1500px;
+  background: #fff;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/***Home Block***/
+.home {
+  width: 1500px;
+  height: 750px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: url(../img/bg_a.png) no-repeat;
+  background-size: cover;
+}
+.home h2 {
+  padding-top: 237px;
+  padding-left: 176px;
+}
+.home p {
+  width: 450px;
+  height: 100px;
+  padding-top: 34px;
+  padding-left: 176px;
+  font-family: "LMRomans";
+  font-size: 18px;
+  line-height: 30px;
+}
+.home .v-line {
+  padding-left: 176px;
+  padding-top: 60px;
+}
+
+/*******NAV MENU*******/
+nav {
+  width: 100px;
+  height: 30px;
+  margin-top: 36px;
+  margin-right: 60px;
+  float: right;
+  overflow: hidden;
+  transition: height .3s ease-in-out;
+}
+nav:hover {
+  width: 100px;
+  height: 150px;
+}
+nav .menu {
+  cursor: default;
+}
+nav a {
+  font-family: "Raleway-Regular";
+  font-size: 18px;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  transition: background .2s ease-in-out;
+}
+nav a img {
+  margin: 0px 0px -2px 12px;
+}
+nav a:hover {
+  background-color: #bcbcbc;
+}
+
+/***About Block***/
+.about {
+  width: 1500px;
+  height: 750px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: url(../img/bg_p.png) no-repeat;
+  background-size: cover;
+}
+
+.about_1 {
+  padding-top: 170px;
+  width: 617px;
+  height: 436px;
+  margin-right: 182px;
+  margin-left: 690px;
+}
+.about_1 h2 {
+  text-align: left;
+  margin-bottom: 44px;
+}
+.about_1 h2 .h-line {
+  padding: 0px 66px 15px 0px;
+}
+.about_1 p {
+  text-align: left;
+  font-family: "LMRomans";
+  font-size: 18px;
+  line-height: 30px;
+}
+.about_1 .about-par2 {
+  margin-top: 44px;
+}
+
+.main-social {
+  display: flex;
+  flex-direction: row;
+  margin-left: 652.5px;
+  margin-top: 30px;
+  width: 200px;
+  height: 32px;
+}
+.main-social a {
+  width: 32px;
+  height: 32px;
+  margin-right: 24px;
+}
+.main-social .pin {
+  margin-right: 0px;
+}
+.main-social .social {
+  width: 32px;
+  height: 32px;
+  background-color: #909090;
+  transition: background .2s ease-in-out;
+}
+.main-social .social:hover {
+  background: #000;
+}
+.main-social .social .fb {
+  padding: 7px 0px 0px 12px;
+}
+.main-social .social .inst {
+  padding: 7px 0px 0px 7px;
+}
+.main-social .social .twi {
+  padding: 9px 0px 0px 7px;
+}
+.main-social .social .pint {
+  padding: 7px 0px 0px 9px;
+}
+
+.portfolio-case1 {
+  width: 1500px;
+  height: 750px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.section {
+  width: 1500px;
+  height: 750px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: url(../img/bg_l.png);
+}
+.section h2 {
+  padding-top: 237px;
+  padding-left: 176px;
+}
+.section p {
+  margin-top: 27px;
+  padding-left: 176px;
+  width: 427px;
+  height: 129px;
+  font-family: "LMRomans";
+  font-size: 18px;
+  line-height: 30px;
+}
+.section img {
+  padding-left: 176px;
+  margin-top: 65px;
+}
+
+.portfolio-case2 {
+  width: 1500px;
+  height: 750px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: url(../img/bg_l2.png);
+}
+
+#carousel {
+  margin: 0 auto;
+  width: 1400px;
+  height: 750px;
+  position: relative;
+  clear: both;
+  overflow: hidden;
+}
+
+#carousel img {
+  visibility: hidden;
+  /* hide images until carousel can handle them */
+  cursor: pointer;
+  /* otherwise it's not as obvious items can be clicked */
+}
+
+footer {
+  width: 1500px;
+  height: 750px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: url(../img/bg_o.png);
+}
+footer h2 {
+  text-align: center;
+  padding-top: 104px;
+  font-family: "Raleway-Thin";
+  font-size: 50px;
+}
+footer h2 strong {
+  font-weight: bold;
+}
+footer p {
+  width: 975px;
+  margin: 0 auto;
+  margin-top: 35px;
+  text-align: center;
+  font-family: "LMRomans";
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.user {
+  height: 283px;
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.user .user-data {
+  background: #efefef;
+  width: 257px;
+  height: 45px;
+  border: 1px solid #000;
+  display: inline-block;
+  margin-right: 38px;
+  padding-left: 20px;
+  color: #000;
+  font-size: 16px;
+  font-family: "Raleway-Regular";
+}
+.user .us-r {
+  margin-right: 0;
+}
+.user .message {
+  display: block;
+  width: 579px;
+  height: 130px;
+  margin-top: 38px;
+  background: #efefef;
+  border: 1px solid #000;
+  padding-left: 20px;
+  padding-top: 1px;
+  color: #000;
+  font-size: 16px;
+  font-family: "Raleway-Regular";
+}
+.user p input {
+  height: 45px;
+  width: 600px;
+  margin-top: 1px;
+  margin-left: -374px;
+  background: #000;
+  border: 0;
+  color: #fff;
+  font-family: "Raleway-Regular";
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}

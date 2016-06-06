@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Apollo</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="bxslider/jquery.bxslider.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.waterwheelCarousel.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      var carousel = $("#carousel").waterwheelCarousel({
+        flankingItems: 3,
+        movingToCenter: function ($item) {
+          $('#callback-output').prepend('movingToCenter: ' + $item.attr('id') + '<br/>');
+        },
+        movedToCenter: function ($item) {
+          $('#callback-output').prepend('movedToCenter: ' + $item.attr('id') + '<br/>');
+        },
+        movingFromCenter: function ($item) {
+          $('#callback-output').prepend('movingFromCenter: ' + $item.attr('id') + '<br/>');
+        },
+        movedFromCenter: function ($item) {
+          $('#callback-output').prepend('movedFromCenter: ' + $item.attr('id') + '<br/>');
+        },
+        clickedCenter: function ($item) {
+          $('#callback-output').prepend('clickedCenter: ' + $item.attr('id') + '<br/>');
+        }
+      });
+
+      $('#prev').bind('click', function () {
+        carousel.prev();
+        return false
+      });
+
+      $('#next').bind('click', function () {
+        carousel.next();
+        return false;
+      });
+
+      $('#reload').bind('click', function () {
+        newOptions = eval("(" + $('#newoptions').val() + ")");
+        carousel.reload(newOptions);
+        return false;
+      });
+
+    });
+  </script>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="home">
+      <nav>
+        <a class="menu">menu<img src="img/menu.png"/></a>
+        <a href="#">home</a>
+        <a href="#">about us</a>
+        <a href="#">portfolio</a>
+        <a href="#">contact</a>
+      </nav>
+      <h2><strong>Apollo</strong> PSD Template</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea </p>
+      <img class="v-line" src="img/vertical_line.png" alt="line"/>
+    </div>
+    <div class="about">
+      <div class="about_1 clearfix">
+      <h2><img class="h-line" src="img/horizon_line.png" alt="" class="h-line">My name is <strong>Apollo</strong></h2>
+      <p class="about-par1">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste
+natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+dolores eos qui ratione voluptatem sequi nesciunt. </p>
+      <p class="about-par2">Ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+    </div>
+      <div class="main-social">
+        <a href="#"><div class="social"><img class="fb" src="img/facebook.png" alt="" /></div></a>
+        <a href="#"><div class="social"><img class="inst" src="img/instagram.png" alt="" /></div></a>
+        <a href="#"><div class="social"><img class="twi" src="img/twitter.png" alt="" /></div></a>
+        <a class="pin" href="#"><div class="social"><img class="pint" src="img/pin.png" alt="" /></div></a>
+      </div>
+    </div>
+    <div class="portfolio-case1">
+      <ul class="bxslider">
+        <li><img src="img/ph1.jpg" /></li>
+        <li><img src="img/ph2.jpg" /></li>
+        <li><img src="img/ph3.jpg" /></li>
+        <li><img src="img/ph4.jpg" /></li>
+      </ul>
+  </div>
+  <div class="section">
+    <h2><strong>Ut enim</strong> ad minim</h2>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+    <img class="v-line" src="img/vertical_line.png" alt="line"/>
+  </div>
+  <div class="portfolio-case2">
+  <div id="carousel">
+    <img class="jjj" src="img/c1.jpeg" alt="Image 1" />
+    <img class="jjj" src="img/c2.jpg" alt="Image 2" />
+    <img class="jjj" src="img/c3.jpg" alt="Image 3" />
+ </div>
+ </div>
+   <footer>
+     <h2><strong>Say</strong> Hello</h2>
+     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+     <div class="user">
+      <form action="">
+        <input class="user-data" type="email" name="input" placeholder="Your E-mail">
+        <input class="user-data us-r" type="text" name="input" placeholder="Subcject">
+        <input class="message" type="text" name="input" placeholder="Message">
+        <p><input type="submit" value="Send Message"></p>
+      </form>
+     </div>
+   </footer>
+  <script src="bxslider/jquery.bxslider.min.js"></script>
+  <script src="bxslider/bxslider.js"></script>
+</body>
+</html>

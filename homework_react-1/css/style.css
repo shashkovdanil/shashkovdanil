@@ -1,0 +1,16 @@
+h1 {
+  font-family: 'Arial';
+  color: grey;
+  text-align: center;
+}
+.art-text {
+  font-family: 'sans-serif';
+  font-size: 20px;
+}
+
+.author-name {
+  font-family: 'Arial';
+  font-style: italic;
+  font-size: 12px;
+  margin-left: 20px;
+}

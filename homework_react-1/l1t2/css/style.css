@@ -1,0 +1,21 @@
+.hello-man {
+  width: 155px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 80px;
+  font-family: 'Arial';
+  font-style: italic;
+  background: #CCCCCC;
+  text-align: center;
+  padding-top: 12px;
+}
+
+input {
+  width: 155px;
+  height: 40px;
+  margin-left: 80px;
+  border: solid 2px #3399FF;
+  padding-left: 20px;
+  font-family: 'Arial';
+  font-style: italic;
+}
